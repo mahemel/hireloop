@@ -64,16 +64,16 @@ const BannerBottom = () => {
                             className="bg-linear-to-b from-[#010102] to-[#313131] rounded-2xl p-5 md:p-6 flex flex-col justify-between gap-8 transition-colors"
                         >
                             <div className="text-white">
-                                <motion.p animate={{ rotate: 45 }}>
-                                    Test para
-                                </motion.p>
                                 <Icon width={22} height={22} />
                             </div>
 
                             <div className="flex flex-col gap-1">
-                                <span className="text-white text-4xl md:text-5xl font-bold tracking-tight leading-none">
+                                <motion.span
+                                    animate={{ rotate: 45 }}
+                                    className="text-white text-4xl md:text-5xl font-bold tracking-tight leading-none"
+                                >
                                     {value}
-                                </span>
+                                </motion.span>
                                 <span className="text-sm mt-1 text-white">
                                     {label}
                                 </span>
