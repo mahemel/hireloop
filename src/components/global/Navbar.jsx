@@ -6,11 +6,10 @@ import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+    const { data: session, isPending } = authClient.useSession();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const router = useRouter();
 
-    const { data: session, isPending } = authClient.useSession();
-    console.log(session);
     const navLinks = [
         { label: "Browse Jobs", href: "/jobs" },
         { label: "Company", href: "/company" },

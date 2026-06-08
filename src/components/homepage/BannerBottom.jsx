@@ -4,7 +4,6 @@ import ChartColumn from "@gravity-ui/icons/ChartColumn";
 import PersonMagnifier from "@gravity-ui/icons/PersonMagnifier";
 import Star from "@gravity-ui/icons/Star";
 import Image from "next/image";
-import { motion } from "motion/react";
 
 const stats = [
     {
@@ -68,12 +67,12 @@ const BannerBottom = () => {
                             </div>
 
                             <div className="flex flex-col gap-1">
-                                <motion.span
+                                <span
                                     animate={{ rotate: 45 }}
                                     className="text-white text-4xl md:text-5xl font-bold tracking-tight leading-none"
                                 >
                                     {value}
-                                </motion.span>
+                                </span>
                                 <span className="text-sm mt-1 text-white">
                                     {label}
                                 </span>
