@@ -10,8 +10,11 @@ import {
 } from "@gravity-ui/icons";
 import { Button, Drawer } from "@heroui/react";
 import Link from "next/link";
+// import { usePathname } from "next/navigation";
 
 const DashboardSidebar = () => {
+    // const pathname = usePathname();
+
     const navItems = [
         { icon: House, href: "/dashboard/recruiter", label: "Home" },
         { icon: Magnifier, href: "/dashboard/recruiter/jobs", label: "Jobs" },
