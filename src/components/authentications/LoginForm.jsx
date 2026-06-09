@@ -21,7 +21,7 @@ const LoginForm = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     const searchParams = useSearchParams();
-    const redirectTo = searchParams.get("redirectTo") || "/";
+    const redirectTo = searchParams.get("redirect") || "/";
 
     const onSubmit = async (e) => {
         e.preventDefault();

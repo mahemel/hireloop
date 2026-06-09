@@ -1,7 +1,7 @@
 import React from "react";
 import PostJobForm from "./PostJobForm";
 import { getUserSession } from "@/lib/core/session";
-import { getRecruiterCompany } from "@/lib/api/getMyCompanies";
+import { getRecruiterCompany } from "@/lib/api/companies";
 import { redirect } from "next/navigation";
 
 const PostJobPage = async () => {

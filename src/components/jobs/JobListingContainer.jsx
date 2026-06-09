@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useMemo } from "react";
-import JobCard from "@/components/jobs/JobsCard";
+import JobCard from "@/components/jobs/JobCard";
 import JobFilters from "@/components/jobs/JobFilters";
 
 export default function JobListingContainer({ initialJobs }) {

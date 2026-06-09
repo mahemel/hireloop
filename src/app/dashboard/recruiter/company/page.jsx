@@ -1,6 +1,6 @@
 import { getUserSession } from "@/lib/core/session";
 import CompanyProfile from "./CompanyProfile";
-import { getRecruiterCompany } from "@/lib/api/getMyCompanies";
+import { getRecruiterCompany } from "@/lib/api/companies";
 
 const CompanyPage = async () => {
     const user = await getUserSession();

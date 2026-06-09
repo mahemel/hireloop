@@ -4,7 +4,7 @@ import { Table, Chip, Button, Tooltip } from "@heroui/react";
 
 import { Eye, Edit2, Trash2 } from "lucide-react";
 import { getUserSession } from "@/lib/core/session";
-import { getRecruiterCompany } from "@/lib/api/getMyCompanies";
+import { getRecruiterCompany } from "@/lib/api/companies";
 
 const RecruiterJobs = async () => {
     const user = await getUserSession();

@@ -13,7 +13,7 @@ const Navbar = () => {
     const navLinks = [
         { label: "Browse Jobs", href: "/jobs" },
         { label: "Companies", href: "/company" },
-        { label: "Pricing", href: "/pricing" },
+        { label: "Pricing", href: "/plans" },
     ];
 
     const handleSignOut = async () => {
